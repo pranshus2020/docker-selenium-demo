@@ -17,4 +17,4 @@ ADD suite/search.xml search.xml
 # GRIDHOST = selenium hub hostname / ipaddress
 
 #ENTRYPOINT /usr/bin/java -cp /usr/share/tag/demo-test.jar:/usr/share/tag/libs/* -DseleniumHubHost=$SELENIUM_HUB -Dbrowser=$BROWSER org.testng.TestNG /usr/share/tag/$MODULE
-ENTRYPOINT java -cp container-test.jar:libs/* -DseleniumHubHost=$SELENIUM_HUB -Dbrowser=$BROWSER org.testng.TestNG $MODULE
+ENTRYPOINT java -cp demo-test.jar:libs/* -DseleniumHubHost=$SELENIUM_HUB -Dbrowser=$BROWSER org.testng.TestNG $MODULE
