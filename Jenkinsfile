@@ -1,7 +1,7 @@
 pipeline {
+    def mvnHome
     agent any
     stages {
-     	def mvnHome
         stage('Preparation') {        
       mvnHome = tool 'M3'
    }
