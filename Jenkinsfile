@@ -1,10 +1,10 @@
 pipeline {
-    def mvnHome
     agent any
-    stages {
-        stage('Preparation') {        
-      mvnHome = tool 'M3'
-   }
+    tools {
+     maven 'Maven 3.3.9' 
+    
+  }
+    stages { 	
         stage('Build Jar') {
             steps {
                 sh 'mvn clean package -DskipTests'
