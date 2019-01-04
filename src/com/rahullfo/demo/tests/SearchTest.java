@@ -24,6 +24,7 @@ public class SearchTest extends BaseTest {
     public void submitTest() {
         hp.goTo();
        Assert.assertTrue(driver.getTitle().contains("Liquor Store"));
+       Assert.assertTrue(driver.getTitle().contains("Liquor"));
       // Assert.assertEquals("Vodka", driver.findElement(By.tagName("body")).getText());
        
     }
