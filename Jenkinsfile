@@ -1,11 +1,10 @@
 pipeline {
     agent any
-    tools {
-    
-    maven 'apache-maven-3.0.1'
-    
-  }
-    stages { 	
+    stages {
+     	def mvnHome
+        stage('Preparation') {        
+      mvnHome = tool 'M3'
+   }
         stage('Build Jar') {
             steps {
                 sh 'mvn clean package -DskipTests'
