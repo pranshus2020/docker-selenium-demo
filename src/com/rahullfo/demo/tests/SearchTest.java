@@ -2,6 +2,7 @@ package com.rahullfo.demo.tests;
 
 import java.net.MalformedURLException;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -23,6 +24,8 @@ public class SearchTest extends BaseTest {
     public void submitTest() {
         hp.goTo();
        Assert.assertTrue(driver.getTitle().contains("Liquor Store"));
+       Assert.assertEquals("Vodka", driver.findElement(By.tagName("body")).getText());
+       
     }
    
     }
