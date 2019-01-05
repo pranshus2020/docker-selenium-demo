@@ -81,7 +81,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>rahulqelfo/seleniumdocker</repository>
+					<repository>pranshu2011/seleniumdocker</repository>
 					<tag>demo</tag>
 				</configuration>
 			</plugin>

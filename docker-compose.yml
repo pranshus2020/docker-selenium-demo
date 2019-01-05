@@ -20,7 +20,7 @@ services:
       - HUB_PORT_4444_TCP_ADDR=selenium-hub
       - HUB_PORT_4444_TCP_PORT=4444
   search-module:
-    image: rahulqelfo/seleniumdocker:demo
+    image: pranshu2011/seleniumdocker:demo
     container_name: search
     depends_on:
       - firefox
