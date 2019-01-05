@@ -31,7 +31,7 @@ public class HomePage {
     }
 
     public void goTo() {
-        this.driver.get("http://ec2-35-153-136-60.compute-1.amazonaws.com:8888/test-server/");
+        this.driver.get("http://ec2-35-153-136-60.compute-1.amazonaws.com:5000/");
         System.out.println("Browser launched and navigated to the Test WebSite");
     }
 
