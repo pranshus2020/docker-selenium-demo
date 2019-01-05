@@ -25,7 +25,7 @@ public class SearchTest extends BaseTest {
         hp.goTo();
        Assert.assertTrue(driver.getTitle().contains("Cats"));
        Assert.assertTrue(driver.getTitle().contains("vs"));
-       Assert.assertTrue(driver.getTitle().contains("Dogs"));
+       Assert.assertTrue(driver.getTitle().contains("Testing"));
       // Assert.assertEquals("Vodka", driver.findElement(By.tagName("body")).getText());
        
     }
