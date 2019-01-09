@@ -4,7 +4,7 @@ pipeline {
      maven 'maven' 
 
   }
-    stages { 	
+    stages {
         stage('Build Jar') {
             steps {
                 sh 'mvn clean package -DskipTests'
@@ -13,7 +13,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 script {
-                	app = docker.build("pranshu2011/seleniumdocker")
+                app = docker.build("pranshus2020/seleniumdocker")
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
 			        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-			        	app.push("${BUILD_NUMBER}")
+			        app.push("${BUILD_NUMBER}")
 			            app.push("latest")
 			        }
                 }
